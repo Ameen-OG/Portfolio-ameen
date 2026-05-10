@@ -37,7 +37,7 @@ const Navbar = () => {
     // dummy resume download
     const link = document.createElement('a');
     link.href = '#';
-    link.download = '/public/resume-ameen.pdf';
+    link.download = '/resume-ameen.pdf';
     link.click();
   };
 

@@ -9,28 +9,28 @@ const testimonials = [
     role: 'MERN Stack Developer, Batchmate at UpCode', 
     text: 'Ameen is an amazing team player! We worked together on several projects at UpCode, and his problem-solving skills in React and Node.js are outstanding. He always helps others when they get stuck.', 
     rating: 5, 
-    avatar: '/public/rishana.jpeg' 
+    avatar: '/rishana.jpeg' 
   },
   { 
     name: 'Shahala', 
     role: 'Full Stack Developer, Batchmate at UpCode', 
     text: 'Working with Ameen on our final MERN project was a great experience. His code is clean, well-organized, and he has a deep understanding of MongoDB and Express.js. Highly recommended!', 
     rating: 5, 
-    avatar: '/public/shahala.jpeg' 
+    avatar: '/shahala.jpeg' 
   },
   { 
     name: 'Safa', 
     role: 'Web Developer, Batchmate at UpCode', 
     text: 'Ameen is not just skilled but also incredibly supportive. Whenever I faced challenges with authentication or API integration, he would explain things patiently. A true team player!', 
     rating: 5, 
-    avatar: '/public/safa.png' 
+    avatar: '/safa.png' 
   },
   { 
     name: 'UpCode Software Labs', 
     role: 'MERN Stack Training Institute, Kannur', 
     text: 'Ameen completed his MERN Stack certification with excellent performance. His dedication to learning and project execution was commendable throughout the program.', 
     rating: 5, 
-    avatar: '/public/upcode.png' 
+    avatar: '/upcode.png' 
   }
 ];
 

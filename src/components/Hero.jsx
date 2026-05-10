@@ -83,7 +83,7 @@ const Hero = () => {
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-tr from-indigo-400 to-purple-600 p-1 shadow-2xl">
             <div className="w-full h-full rounded-full bg-gray-800 dark:bg-gray-900 flex items-center justify-center overflow-hidden">
               <img 
-                src="/public/ameen.jpeg" 
+                src="/ameen.jpeg" 
                 alt="profile" 
                 className="w-full h-full object-cover rounded-full" 
               />
