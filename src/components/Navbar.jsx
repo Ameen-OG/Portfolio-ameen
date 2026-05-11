@@ -33,13 +33,14 @@ const Navbar = () => {
     }
   };
 
-  const handleResume = () => {
-    // dummy resume download
-    const link = document.createElement('a');
-    link.href = '#';
-    link.download = '/resume-ameen1.pdf';
-    link.click();
-  };
+ const handleResume = () => {
+  const link = document.createElement('a');
+  link.href = '/resume-ameen1.pdf';
+  link.download = 'resume-ameen1.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   return (
     <motion.nav
