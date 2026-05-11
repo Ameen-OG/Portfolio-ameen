@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const projectsData = [
-  { id: 1, title: 'Cowin Site', category: 'frontend', image: '/cowin.png', desc: 'Same design the real cowin site', tech: ['Boostrap' ,'CSS'], github: '#', demo: '#', features: ['Live charts', 'Dark mode'] },
+  { id: 1, title: 'Cowin Site', category: 'frontend', image: '/cowin.png', desc: 'Same design the real cowin site. used bootstrap and referenced by real cowin site', tech: ['Boostrap' ,'CSS'], github: '#', demo: '#', features: ['Live charts', 'Dark mode'] },
   { id: 2, title: 'Role Based Backend Server', category: 'backend', image: '/Rolebased.png', desc: 'Secure backend API with JWT authentication, role-based access control, and product management features.', tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'bcrypt'], github: '#', demo: '#', features: ['User signup & login', 'JWT authentication', 'Admin & customer roles', 'Protected admin routes', 'CRUD products API', 'Public product endpoints'] },
   { id: 3, title: 'E-commerce', category: 'fullstack', image: '/ecommerce.png', desc: 'Full-stack eCommerce application with authentication, product management, cart, and order features.', tech: ['React.js', 'tailwind', 'PostgreSQL'], github: '#', demo: '#', features: ['Realtime updates', 'Drag & drop'] },
   { id: 4, title: 'Portfolio 3.0', category: 'frontend', image: 'https://picsum.photos/id/20/400/300', desc: 'Modern portfolio with glassmorphism', tech: ['React', 'Framer', 'Tailwind'], github: '#', demo: '#', features: ['Smooth transitions'] }
