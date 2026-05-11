@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="py-8 border-t border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-950/50 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-gray-500">
-          © 2025 Ameen NK. Built with{" "}
+          © 2026 Ameen NK. Built with{" "}
           <FiHeart className="inline text-red-500" /> & MERN Stack
         </p>
         <div className="flex gap-5 text-gray-500">
