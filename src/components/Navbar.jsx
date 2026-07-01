@@ -35,8 +35,8 @@ const Navbar = () => {
 
  const handleResume = () => {
   const link = document.createElement('a');
-  link.href = '/resume-ameen1.pdf';
-  link.download = 'resume-ameen1.pdf';
+  link.href = '/Muhammed_Ameen_Nk_Resume.pdf';
+  link.download = 'Muhammed_Ameen_Nk_Resume.pdf';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
