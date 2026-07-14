@@ -8,7 +8,7 @@ const timeline = [
     title: "BCA (Bachelor of Computer Applications)",
     company: "IGNOU (Indira Gandhi National Open University)",
     type: "edu",
-    desc: "Final year student studying Computer Applications, covering programming, databases, and software engineering.",
+    desc: "Studied Computer Applications, covering programming, databases, and software engineering.",
   },
   {
     year: "2025 to 2026 - Present",

@@ -47,9 +47,8 @@ const Hero = () => {
           <div className="text-2xl md:text-3xl font-medium mt-4 h-16">
             <Typewriter words={roles} />
           </div>
-          <p className="text-gray-600 dark:text-gray-300 mt-6 max-w-lg mx-auto lg:mx-0 text-lg">
-            MERN Stack graduate from UpCode Software Labs, Kannur. Currently pursuing BCA (Final Year) at IGNOU.
-  Passionate about building modern web applications.
+          <p className="text-gray-600 dark:text-gray-300 mt-0 max-w-lg mx-auto lg:mx-0 text-lg">
+           Passionate MERN Stack Developer specializing in building dynamic, responsive, and high-performance web applications. Experienced with MongoDB, Express.js, React, Node.js, REST APIs, and modern frontend technologies, with a commitment to writing clean and maintainable code.
           </p>
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start mt-8">
             <a href="#projects" className="px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold flex items-center gap-2 hover:bg-indigo-700 transition shadow-lg">

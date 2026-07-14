@@ -51,7 +51,9 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')} className="text-2xl font-bold text-gradient">
-          Portfol<span className="text-gray-800 dark:text-white">.io</span>
+          <span className="text-gray-800 dark:text-white">&lt; </span>
+  Ameen
+  <span className="text-gray-800 dark:text-white"> /&gt;</span>
         </a>
 
         {/* Desktop menu */}
