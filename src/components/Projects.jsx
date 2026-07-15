@@ -55,7 +55,7 @@ const projectsData = [
     image: '/cowin.png', 
     desc: 'Same design as the real Cowin site. Used Bootstrap and referenced by the real Cowin site for an authentic look.', 
     tech: ['Bootstrap', 'CSS'], 
-    github: '#', 
+    github: 'https://github.com/Ameen-OG/cowin-site-bootsrap.git', 
     demo: '#', 
     features: ['Responsive Design', 'Bootstrap Framework', 'Original UI Replication'] 
   },
