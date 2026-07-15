@@ -66,7 +66,7 @@ const projectsData = [
     image: '/Rolebased.png', 
     desc: 'Secure backend API with JWT authentication, role-based access control, and product management features.', 
     tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'bcrypt'], 
-    github: '#', 
+    github: 'https://github.com/Ameen-OG/Role-Based-Backend-Server.git', 
     demo: '#', 
     features: ['User signup & login', 'JWT authentication', 'Admin & customer roles', 'Protected admin routes', 'CRUD products API', 'Public product endpoints'] 
   }
