@@ -11,8 +11,8 @@ const projectsData = [
     image: '/crm.png', 
     desc: 'Built a CRM system with lead management, role-based authentication, and sales pipeline tracking. Developed REST APIs, automated email workflows, and real-time analytics dashboards.', 
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Redux Toolkit', 'Tailwind CSS'], 
-    github: '#', 
-    demo: '#', 
+    github: 'https://github.com/Ameen-OG/FullStack-ecommerce', 
+    demo: 'https://crm-software-frontend-one.vercel.app/dashboard', 
     features: ['Lead Management', 'Role-based Auth', 'Sales Pipeline', 'Real-time Analytics'] 
   },
   { 
@@ -23,7 +23,7 @@ const projectsData = [
     desc: 'AI-powered design review platform with click-based annotation and Gemini Pro integration, reducing design revision cycles by 70% across 50+ users.', 
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Gemini AI'], 
     github: 'https://github.com/Ameen-OG/Design-Feedback-App', 
-    demo: '#', 
+    demo: null,
     features: ['AI-powered feedback', 'Click-based annotation', 'Gemini Pro API', 'Design review'] 
   },
   { 
@@ -34,7 +34,7 @@ const projectsData = [
     desc: 'Full-stack e-commerce platform with secure JWT authentication, CRUD operations, and integrated responsive frontend with backend REST APIs.', 
     tech: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'JWT'], 
     github: 'https://github.com/Ameen-OG/FullStack-ecommerce', 
-    demo: '#', 
+    demo: null,  
     features: ['JWT Authentication', 'CRUD Operations', 'REST APIs', 'Responsive Design'] 
   },
   { 
@@ -45,7 +45,7 @@ const projectsData = [
     desc: 'ML model to predict solar storm activity using historical data; performed preprocessing, training, and visualization, and developed a web interface to display results.', 
     tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'], 
     github: 'https://github.com/Ameen-OG/SolarStorm-Prediction-Analysis', 
-    demo: '#', 
+    demo: null,
     features: ['ML Model', 'Data Preprocessing', 'Visualization', 'Web Interface'] 
   },
   { 
@@ -56,7 +56,7 @@ const projectsData = [
     desc: 'Same design as the real Cowin site. Used Bootstrap and referenced by the real Cowin site for an authentic look.', 
     tech: ['Bootstrap', 'CSS'], 
     github: 'https://github.com/Ameen-OG/cowin-site-bootsrap.git', 
-    demo: '#', 
+    demo: null,  
     features: ['Responsive Design', 'Bootstrap Framework', 'Original UI Replication'] 
   },
   { 
@@ -67,7 +67,7 @@ const projectsData = [
     desc: 'Secure backend API with JWT authentication, role-based access control, and product management features.', 
     tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'bcrypt'], 
     github: 'https://github.com/Ameen-OG/Role-Based-Backend-Server.git', 
-    demo: '#', 
+    demo: null,  
     features: ['User signup & login', 'JWT authentication', 'Admin & customer roles', 'Protected admin routes', 'CRUD products API', 'Public product endpoints'] 
   }
 ];
@@ -135,6 +135,12 @@ const Projects = () => {
                       e.target.src = 'https://via.placeholder.com/400x300/6366f1/ffffff?text=' + project.title;
                     }}
                   />
+                  {/* Demo Badge */}
+                  {project.demo && (
+                    <span className="absolute top-3 right-3 bg-green-500 text-white text-xs px-2 py-1 rounded-full shadow-lg">
+                      Live Demo
+                    </span>
+                  )}
                 </div>
                 <div className="p-5">
                   <div className="flex justify-between items-start">
@@ -157,12 +163,28 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex gap-4 mt-4 pt-3 border-t border-gray-200 dark:border-gray-700">
-                    <a href={project.github} className="text-gray-600 hover:text-indigo-600 flex items-center gap-1 transition">
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-indigo-600 flex items-center gap-1 transition"
+                    >
                       <FiGithub /> Code
                     </a>
-                    <a href={project.demo} className="text-gray-600 hover:text-indigo-600 flex items-center gap-1 transition">
-                      <FiExternalLink /> Demo
-                    </a>
+                    {project.demo ? (
+                      <a 
+                        href={project.demo} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-green-600 flex items-center gap-1 transition"
+                      >
+                        <FiExternalLink /> Demo
+                      </a>
+                    ) : (
+                      <span className="text-gray-400 flex items-center gap-1 cursor-not-allowed">
+                       
+                      </span>
+                    )}
                   </div>
                 </div>
               </motion.div>
