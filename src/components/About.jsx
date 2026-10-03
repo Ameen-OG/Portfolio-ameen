@@ -1,6 +1,6 @@
 // src/components/About.jsx
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaLaptopCode, FaBriefcase } from 'react-icons/fa';
+import { FaGraduationCap, FaLaptopCode, FaCertificate } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -10,40 +10,64 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">About <span className="text-gradient">Me</span></h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto rounded-full mb-12"></div>
         </motion.div>
+
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -30 }}>
+          <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -30 }} viewport={{ once: true }}>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-              I’m a passionate full-stack developer with 6 month of experience at Upcode Software Labs building scalable web applications. I love turning complex problems into simple, beautiful, and intuitive designs. Currently focused on React ecosystem, Node.js, and cloud architecture.
+              I'm a <strong>Full-Stack Developer</strong> based in Kannur, Kerala, with
+              hands-on experience building and deploying production web applications across
+              the <strong>MERN stack</strong> and <strong>Python / Django</strong>. I've
+              completed intensive full-stack training at UpCode Software Labs and shipped
+              multiple end-to-end projects — from REST API design and database modeling to
+              responsive React UIs and Dockerized deployment. I'm now actively seeking a
+              full-stack or backend role where I can contribute to real production systems.
             </p>
-         
 
-<div className="mt-8 flex gap-4 items-center">
-  <FaGraduationCap className="text-indigo-500 text-2xl" /> 
-  <div>
-    <h4 className="font-bold">MERN Stack Certification</h4>
-    <p className="text-gray-500">UpCode Software Labs, Kannur | 2024</p>
-  </div>
-</div>
+            <div className="mt-8 flex gap-4 items-center">
+              <FaCertificate className="text-indigo-500 text-2xl" />
+              <div>
+                <h4 className="font-bold">Full-Stack Developer Program</h4>
+                <p className="text-gray-500">UpCode Software Labs, Kannur | Completed 2026</p>
+              </div>
+            </div>
 
-<div className="flex gap-4 items-center mt-4">
-  <FaGraduationCap className="text-indigo-500 text-2xl" /> 
-  <div>
-    <h4 className="font-bold">BCA (Bachelor of Computer Applications)</h4>
-    <p className="text-gray-500">IGNOU | Final Year (2024-2026)</p>
-  </div>
-</div>
+            <div className="flex gap-4 items-center mt-4">
+              <FaGraduationCap className="text-indigo-500 text-2xl" />
+              <div>
+                <h4 className="font-bold">BCA (Bachelor of Computer Applications)</h4>
+                <p className="text-gray-500">IGNOU | 2024 – 2026</p>
+              </div>
+            </div>
 
-<div className="flex gap-4 items-center mt-4">
-  <FaLaptopCode className="text-indigo-500 text-2xl" /> 
-  <div>
-    <h4 className="font-bold">Career Goal</h4>
-    <p className="text-gray-500">To become a full-stack developer and build scalable web solutions</p>
-  </div>
-</div>
+            <div className="flex gap-4 items-center mt-4">
+              <FaLaptopCode className="text-indigo-500 text-2xl" />
+              <div>
+                <h4 className="font-bold">Open To</h4>
+                <p className="text-gray-500">
+                  Full-stack / Backend roles · Remote &amp; on-site · Immediate joiner
+                </p>
+              </div>
+            </div>
           </motion.div>
-          <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 30 }} className="glass-card p-6 rounded-2xl">
+
+          <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 30 }} viewport={{ once: true }} className="glass-card p-6 rounded-2xl">
             <h3 className="text-2xl font-bold mb-4">Personal Summary</h3>
-            <p className="text-gray-600 dark:text-gray-300">Based in Kannur, I’m constantly exploring new tech, contributing to open source, and sharing knowledge through workshops. I believe in writing clean code that lasts.</p>
+            <p className="text-gray-600 dark:text-gray-300">
+              I focus on writing maintainable, well-documented code and staying current with
+              modern tooling. I've built and deployed multiple full-stack products — including
+              a healthcare platform with AI-powered insights, a role-based CRM, and an
+              AI-powered design feedback tool. I'm comfortable owning features from database
+              schema to UI, and I learn quickly by building. Currently looking for a team
+              where I can grow and ship real products.
+            </p>
+            <a
+              href="/Ameen_NK_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition"
+            >
+              Download Resume
+            </a>
           </motion.div>
         </div>
       </div>

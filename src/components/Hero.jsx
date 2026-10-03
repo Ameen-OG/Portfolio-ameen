@@ -1,7 +1,7 @@
 // src/components/Hero.jsx
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiArrowRight } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiArrowRight, FiDownload } from 'react-icons/fi';
 
 // Custom typewriter effect (no external library needed)
 const Typewriter = ({ words }) => {
@@ -29,62 +29,107 @@ const Typewriter = ({ words }) => {
 };
 
 const Hero = () => {
-  const roles = ['FullStack Developer', 'MERN Stack', 'React Expert'];
+  const roles = [
+    'Full-Stack Developer',
+    'MERN + Django',
+    'React · Node · Python',
+    'Building Scalable Web Apps',
+  ];
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative pt-20 pb-16 px-4 overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 z-10">
-        <motion.div 
-          initial={{ opacity: 0, x: -50 }} 
-          animate={{ opacity: 1, x: 0 }} 
-          transition={{ duration: 0.7 }} 
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
           className="flex-1 text-center lg:text-left"
         >
-          <span className="text-indigo-500 font-semibold tracking-wide">👋 Hello, I'm</span>
+          <span className="text-indigo-500 font-semibold tracking-wide">
+            👋 Hello, I'm
+          </span>
+
           <h1 className="text-5xl md:text-7xl font-extrabold mt-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-            Ameen nk
+            Ameen N K
           </h1>
+
           <div className="text-2xl md:text-3xl font-medium mt-4 h-16">
             <Typewriter words={roles} />
           </div>
-          <p className="text-gray-600 dark:text-gray-300 mt-0 max-w-lg mx-auto lg:mx-0 text-lg">
-           Passionate MERN Stack Developer specializing in building dynamic, responsive, and high-performance web applications. Experienced with MongoDB, Express.js, React, Node.js, REST APIs, and modern frontend technologies, with a commitment to writing clean and maintainable code.
+
+          <p className="text-gray-600 dark:text-gray-300 mt-0 max-w-xl mx-auto lg:mx-0 text-lg">
+            Full-Stack Developer with hands-on experience building and deploying production
+            web applications across the <strong>MERN stack</strong> and{' '}
+            <strong>Python / Django</strong>. I ship features end-to-end — from REST API
+            design and database modeling to responsive React UIs and Dockerized deployment —
+            with a focus on clean, maintainable code.
           </p>
+
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start mt-8">
-            <a href="#projects" className="px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold flex items-center gap-2 hover:bg-indigo-700 transition shadow-lg">
-              View Work <FiArrowRight />
+            <a
+              href="#projects"
+              className="px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold flex items-center gap-2 hover:bg-indigo-700 transition shadow-lg"
+            >
+              View My Work <FiArrowRight />
             </a>
-            <a href="#contact" className="px-6 py-3 rounded-full border border-indigo-600 text-indigo-600 dark:text-indigo-400 font-semibold hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">
+            <a
+              href="#contact"
+              className="px-6 py-3 rounded-full border border-indigo-600 dark:border-indigo-600 text-indigo-600 dark:text-gray-300 font-semibold hover:border-indigo-500 hover:text-indigo-500 transition"
+            >
               Contact Me
             </a>
           </div>
+
           <div className="flex gap-5 justify-center lg:justify-start mt-8">
-            <a href="https://github.com/Ameen-OG" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 dark:text-gray-400 hover:text-indigo-500 transition">
+            <a
+              href="https://github.com/Ameen-OG"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-2xl text-gray-600 dark:text-gray-400 hover:text-indigo-500 transition"
+            >
               <FiGithub />
             </a>
-            <a href="https://www.linkedin.com/in/ameen-nk-58a625382/" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 dark:text-gray-400 hover:text-indigo-500 transition">
+            <a
+              href="https://www.linkedin.com/in/ameen-nk-58a625382/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-2xl text-gray-600 dark:text-gray-400 hover:text-indigo-500 transition"
+            >
               <FiLinkedin />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-600 dark:text-gray-400 hover:text-indigo-500 transition">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              className="text-2xl text-gray-600 dark:text-gray-400 hover:text-indigo-500 transition"
+            >
               <FiTwitter />
             </a>
-            <a href="mailto:ameennk1110@gmail.com" className="text-2xl text-gray-600 dark:text-gray-400 hover:text-indigo-500 transition">
+            <a
+              href="mailto:ameennk1110@gmail.com"
+              aria-label="Email"
+              className="text-2xl text-gray-600 dark:text-gray-400 hover:text-indigo-500 transition"
+            >
               <FiMail />
             </a>
           </div>
         </motion.div>
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.8 }} 
-          animate={{ opacity: 1, scale: 1 }} 
-          transition={{ duration: 0.7 }} 
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
           className="flex-1 flex justify-center"
         >
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-tr from-indigo-400 to-purple-600 p-1 shadow-2xl">
             <div className="w-full h-full rounded-full bg-gray-800 dark:bg-gray-900 flex items-center justify-center overflow-hidden">
-              <img 
-                src="/ameen.jpeg" 
-                alt="profile" 
-                className="w-full h-full object-cover rounded-full" 
+              <img
+                src="/ameen.jpeg"
+                alt="Ameen N K — Full-Stack Developer"
+                className="w-full h-full object-cover rounded-full"
               />
             </div>
           </div>

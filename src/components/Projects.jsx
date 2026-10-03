@@ -4,72 +4,100 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const projectsData = [
-  { 
-    id: 1, 
-    title: 'Full-Stack Sales CRM', 
-    category: 'fullstack', 
-    image: '/crm.png', 
-    desc: 'Built a CRM system with lead management, role-based authentication, and sales pipeline tracking. Developed REST APIs, automated email workflows, and real-time analytics dashboards.', 
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Redux Toolkit', 'Tailwind CSS'], 
-    github: 'https://github.com/Ameen-OG/FullStack-ecommerce', 
-    demo: 'https://crm-software-frontend-one.vercel.app/dashboard', 
-    features: ['Lead Management', 'Role-based Auth', 'Sales Pipeline', 'Real-time Analytics'] 
+  
+  {
+    id: 1,
+    title: 'Full-Stack Sales CRM',
+    category: 'fullstack',
+    image: '/crm.png',
+    desc: 'Built a CRM system with lead management, role-based authentication, and sales pipeline tracking. Developed REST APIs, automated email workflows, and real-time analytics dashboards.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Redux Toolkit', 'Tailwind CSS'],
+    github: 'https://github.com/Ameen-OG/FullStack-ecommerce',
+    demo: 'https://crm-software-frontend-one.vercel.app/dashboard',
+    features: ['Lead Management', 'Role-based Auth', 'Sales Pipeline', 'Real-time Analytics'],
   },
-  { 
-    id: 2, 
-    title: 'Design Feedback Tool', 
-    category: 'fullstack', 
-    image: '/designFeedback.png', 
-    desc: 'AI-powered design review platform with click-based annotation and Gemini Pro integration, reducing design revision cycles by 70% across 50+ users.', 
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Gemini AI'], 
-    github: 'https://github.com/Ameen-OG/Design-Feedback-App', 
+  {
+    id: 7,
+    title: 'GlucoCare — Diabetes Management Platform',
+    category: 'fullstack',
+    image: '/glucoCare.png',                   
+    desc: 'Comprehensive diabetes management platform with blood sugar tracking, AI-powered meal classification, habit streaks, appointment reminders, and pre-visit PDF reports. Weekly AI insights powered by Google Gemini help users stay on track.',
+    tech: ['React.js', 'Vite', 'Tailwind CSS', 'Recharts', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Gemini AI', 'JWT', 'node-cron', 'Agenda'],
+    github: 'https://github.com/Ameen-OG/glucoCare',   
+    demo: null,                                        
+    features: [
+      'Blood Sugar Tracker',
+      'AI Meal Logger',
+      'Habit Streaks',
+      'Appointment Reminders',
+      'Pre-Visit PDF Reports',
+      'Gemini AI Insights',
+      'Gamification Badges',
+      'Auto-flagging Low/High',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Design Feedback Tool',
+    category: 'fullstack',
+    image: '/designFeedback.png',
+    desc: 'AI-powered design review platform with click-based annotation and Gemini Pro integration, reducing design revision cycles by 70% across 50+ users.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Gemini AI'],
+    github: 'https://github.com/Ameen-OG/Design-Feedback-App',
     demo: null,
-    features: ['AI-powered feedback', 'Click-based annotation', 'Gemini Pro API', 'Design review'] 
+    features: ['AI-powered feedback', 'Click-based annotation', 'Gemini Pro API', 'Design review'],
   },
-  { 
-    id: 3, 
-    title: 'E-Commerce Web Application', 
-    category: 'fullstack', 
-    image: '/ecommerce.png', 
-    desc: 'Full-stack e-commerce platform with secure JWT authentication, CRUD operations, and integrated responsive frontend with backend REST APIs.', 
-    tech: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'JWT'], 
-    github: 'https://github.com/Ameen-OG/FullStack-ecommerce', 
-    demo: null,  
-    features: ['JWT Authentication', 'CRUD Operations', 'REST APIs', 'Responsive Design'] 
-  },
-  { 
-    id: 4, 
-    title: 'Solar Storm Prediction & Analysis', 
-    category: 'backend', 
-    image: '/solarStorm.png', 
-    desc: 'ML model to predict solar storm activity using historical data; performed preprocessing, training, and visualization, and developed a web interface to display results.', 
-    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'], 
-    github: 'https://github.com/Ameen-OG/SolarStorm-Prediction-Analysis', 
+  {
+    id: 3,
+    title: 'E-Commerce Web Application',
+    category: 'fullstack',
+    image: '/ecommerce.png',
+    desc: 'Full-stack e-commerce platform with secure JWT authentication, CRUD operations, and integrated responsive frontend with backend REST APIs.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'JWT'],
+    github: 'https://github.com/Ameen-OG/FullStack-ecommerce',
     demo: null,
-    features: ['ML Model', 'Data Preprocessing', 'Visualization', 'Web Interface'] 
+    features: ['JWT Authentication', 'CRUD Operations', 'REST APIs', 'Responsive Design'],
   },
-  { 
-    id: 5, 
-    title: 'Cowin Site Clone', 
-    category: 'frontend', 
-    image: '/cowin.png', 
-    desc: 'Same design as the real Cowin site. Used Bootstrap and referenced by the real Cowin site for an authentic look.', 
-    tech: ['Bootstrap', 'CSS'], 
-    github: 'https://github.com/Ameen-OG/cowin-site-bootsrap.git', 
-    demo: null,  
-    features: ['Responsive Design', 'Bootstrap Framework', 'Original UI Replication'] 
+  {
+    id: 4,
+    title: 'Solar Storm Prediction & Analysis',
+    category: 'backend',
+    image: '/solarStorm.png',
+    desc: 'ML model to predict solar storm activity using historical data; performed preprocessing, training, and visualization, and developed a web interface to display results.',
+    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
+    github: 'https://github.com/Ameen-OG/SolarStorm-Prediction-Analysis',
+    demo: null,
+    features: ['ML Model', 'Data Preprocessing', 'Visualization', 'Web Interface'],
   },
-  { 
-    id: 6, 
-    title: 'Role Based Backend Server', 
-    category: 'backend', 
-    image: '/Rolebased.png', 
-    desc: 'Secure backend API with JWT authentication, role-based access control, and product management features.', 
-    tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'bcrypt'], 
-    github: 'https://github.com/Ameen-OG/Role-Based-Backend-Server.git', 
-    demo: null,  
-    features: ['User signup & login', 'JWT authentication', 'Admin & customer roles', 'Protected admin routes', 'CRUD products API', 'Public product endpoints'] 
-  }
+  {
+    id: 5,
+    title: 'Cowin Site Clone',
+    category: 'frontend',
+    image: '/cowin.png',
+    desc: 'Same design as the real Cowin site. Used Bootstrap and referenced by the real Cowin site for an authentic look.',
+    tech: ['Bootstrap', 'CSS'],
+    github: 'https://github.com/Ameen-OG/cowin-site-bootsrap.git',
+    demo: null,
+    features: ['Responsive Design', 'Bootstrap Framework', 'Original UI Replication'],
+  },
+  {
+    id: 6,
+    title: 'Role Based Backend Server',
+    category: 'backend',
+    image: '/Rolebased.png',
+    desc: 'Secure backend API with JWT authentication, role-based access control, and product management features.',
+    tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'bcrypt'],
+    github: 'https://github.com/Ameen-OG/Role-Based-Backend-Server.git',
+    demo: null,
+    features: [
+      'User signup & login',
+      'JWT authentication',
+      'Admin & customer roles',
+      'Protected admin routes',
+      'CRUD products API',
+      'Public product endpoints',
+    ],
+  },
 ];
 
 const categories = ['All', 'frontend', 'backend', 'fullstack'];
@@ -88,19 +116,23 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Featured <span className="text-gradient">Projects</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            Featured <span className="text-gradient">Projects</span>
+          </h2>
           <div className="w-24 h-1 bg-indigo-500 mx-auto rounded-full mb-4"></div>
-          <p className="text-center text-gray-600 dark:text-gray-400 mb-8">A showcase of my full-stack development projects</p>
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-8">
+            A showcase of my full-stack development projects
+          </p>
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {categories.map(cat => (
-            <button 
-              key={cat} 
-              onClick={() => setActive(cat)} 
+            <button
+              key={cat}
+              onClick={() => setActive(cat)}
               className={`px-5 py-2 rounded-full transition capitalize ${
-                active === cat 
-                  ? 'bg-indigo-600 text-white shadow-md' 
+                active === cat
+                  ? 'bg-indigo-600 text-white shadow-md'
                   : 'bg-white/50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-indigo-100 dark:hover:bg-indigo-900'
               }`}
             >
@@ -110,50 +142,58 @@ const Projects = () => {
         </div>
 
         <AnimatePresence mode="wait">
-          <motion.div 
-            key={active} 
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            exit={{ opacity: 0 }} 
+          <motion.div
+            key={active}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {filtered.map((project, index) => (
-              <motion.div 
+              <motion.div
                 key={project.id}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -10 }} 
+                whileHover={{ y: -10 }}
                 className="glass-card rounded-2xl overflow-hidden group"
               >
                 <div className="relative overflow-hidden h-48 bg-gray-200 dark:bg-gray-800">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transition group-hover:scale-105 duration-300" 
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition group-hover:scale-105 duration-300"
                     onError={(e) => {
-                      e.target.src = 'https://via.placeholder.com/400x300/6366f1/ffffff?text=' + project.title;
+                      e.target.src =
+                        'https://via.placeholder.com/400x300/6366f1/ffffff?text=' +
+                        encodeURIComponent(project.title);
                     }}
                   />
-                  {/* Demo Badge */}
                   {project.demo && (
                     <span className="absolute top-3 right-3 bg-green-500 text-white text-xs px-2 py-1 rounded-full shadow-lg">
                       Live Demo
                     </span>
                   )}
                 </div>
+
                 <div className="p-5">
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start gap-2">
                     <h3 className="text-xl font-bold">{project.title}</h3>
-                    <span className="text-xs bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-2 py-1 rounded-full capitalize">
+                    <span className="text-xs bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-2 py-1 rounded-full capitalize shrink-0">
                       {project.category}
                     </span>
                   </div>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-2 line-clamp-2">{project.desc}</p>
-                  
+
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-2 line-clamp-2">
+                    {project.desc}
+                  </p>
+
                   <div className="flex flex-wrap gap-2 mt-3">
                     {project.tech.slice(0, 4).map(t => (
-                      <span key={t} className="bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs px-2 py-1 rounded-full">
+                      <span
+                        key={t}
+                        className="bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs px-2 py-1 rounded-full"
+                      >
                         {t}
                       </span>
                     ))}
@@ -161,20 +201,20 @@ const Projects = () => {
                       <span className="text-xs text-gray-500">+{project.tech.length - 4} more</span>
                     )}
                   </div>
-                  
+
                   <div className="flex gap-4 mt-4 pt-3 border-t border-gray-200 dark:border-gray-700">
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
+                    <a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-indigo-600 flex items-center gap-1 transition"
                     >
                       <FiGithub /> Code
                     </a>
                     {project.demo ? (
-                      <a 
-                        href={project.demo} 
-                        target="_blank" 
+                      <a
+                        href={project.demo}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 hover:text-green-600 flex items-center gap-1 transition"
                       >
@@ -182,7 +222,7 @@ const Projects = () => {
                       </a>
                     ) : (
                       <span className="text-gray-400 flex items-center gap-1 cursor-not-allowed">
-                       
+                        <FiExternalLink /> Demo (soon)
                       </span>
                     )}
                   </div>
@@ -202,4 +242,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projects;  
